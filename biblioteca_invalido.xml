@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<biblioteca>
+  <libro>
+    <titulo>Don Quijote de la Mancha</titulo>
+    <autor>Miguel de Cervantes</autor>
+    <editorial>Alfaguara</editorial>
+    <fecha_publicacion>1605</fecha_publicacion>
+    <isbn>978-84-204-1234-5</isbn>
+  </libro>
+  <libro>
+    <titulo>Cien años de soledad</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <editorial>Sudamericana</editorial>
+    <fecha_publicacion>1967</fecha_publicacion>
+    <!-- Falta el elemento isbn para provocar error -->
+  </libro>
+</biblioteca>
