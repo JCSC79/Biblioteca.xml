@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+
+  <libro>
+    <titulo>Don Quijote de la Mancha</titulo>
+    <autor>Miguel de Cervantes</autor>
+    <editorial>Alfaguara</editorial>
+    <fecha_publicacion>1605</fecha_publicacion>
+    <isbn>978-84-204-1234-5</isbn>
+  </libro>
+  <libro>
+    <titulo>Cien años de soledad</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <editorial>Sudamericana</editorial>
+    <fecha_publicacion>1967</fecha_publicacion>
+    <isbn>978-84-376-0494-7</isbn>
+  </libro>
+  <libro>
+    <titulo>La sombra del viento</titulo>
+    <autor>Carlos Ruiz Zafón</autor>
+    <editorial>Planeta</editorial>
+    <fecha_publicacion>2001</fecha_publicacion>
+    <isbn>978-84-08-03632-5</isbn>
+  </libro>
+  <libro>
+    <titulo>El amor en los tiempos del cólera</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <editorial>Alfaguara</editorial>
+    <fecha_publicacion>1985</fecha_publicacion>
+    <isbn>978-84-376-0492-3</isbn>
+  </libro>
+  <libro>
+    <titulo>Rayuela</titulo>
+    <autor>Julio Cortázar</autor>
+    <editorial>Seix Barral</editorial>
+    <fecha_publicacion>1963</fecha_publicacion>
+    <isbn>978-84-020-9999-1</isbn>
+  </libro>
+</biblioteca>
