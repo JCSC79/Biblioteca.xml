@@ -27,3 +27,19 @@ Se han validado dos archivos:
 - **biblioteca_invalido.xml:** Documento con errores intencionales (p. ej., falta el elemento `<isbn>` en uno de los `<libro>`), lo que permitió comprobar que el esquema detecta las inconsistencias.
 
 La validación se realizó utilizando Visual Studio Code con la extensión "XML Tools" y se verificó con la herramienta en línea [XMLValidation.com](https://www.xmlvalidation.com/).
+
+## CA4.6 - Asociación de descripciones con los documentos XML
+
+Los documentos XML se encuentran correctamente asociados a sus descripciones mediante:
+
+- Declaración de tipo de documento (`<!DOCTYPE ...>`) en el caso de DTD.
+- Atributos del espacio de nombres (`xsi:noNamespaceSchemaLocation`) en el caso de XSD.
+
+### Asociación DTD:
+```xml
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+
+### Asociación XSD:
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+
