@@ -36,10 +36,20 @@ Los documentos XML se encuentran correctamente asociados a sus descripciones med
 - Atributos del espacio de nombres (`xsi:noNamespaceSchemaLocation`) en el caso de XSD.
 
 ### Asociación DTD:
-```xml
-<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+``xml
+- <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
 
 ### Asociación XSD:
-<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+- <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+
+## CA4.7 - Utilización de herramientas específicas
+
+Se utilizaron las siguientes herramientas para el desarrollo y validación de documentos XML:
+
+- **Visual Studio Code** como editor principal, con extensiones para trabajar con XML:
+  - XML Language Support
+  - XML Tools
+- **Validadores en línea** como https://www.xmlvalidation.com para verificar la conformidad con DTD y XSD.
+- **Git y GitHub** como sistema de control de versiones para documentar y versionar el proyecto.
 
