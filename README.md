@@ -37,11 +37,11 @@ Los documentos XML se encuentran correctamente asociados a sus descripciones med
 
 ### Asociación DTD:
 xml
-<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+(<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">)
 
 ### Asociación XSD:
-<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+(<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd">)
 
 ## CA4.7 - Utilización de herramientas específicas
 
