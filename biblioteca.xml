@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<!-- Para validar con DTD, se hace referencia al archivo biblioteca.dtd -->
+<!-- <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd"> -->
+<!-- Para usar XML Schema, comentamos la línea DTD y se usaria el siguiente:
+--> 
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
 
-<biblioteca>
   <libro>
     <titulo>Don Quijote de la Mancha</titulo>
     <autor>Miguel de Cervantes</autor>

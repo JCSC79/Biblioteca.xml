@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema XML para definir la estructura de una biblioteca -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elemento raíz "biblioteca" que contiene una lista de libros -->
   <xs:element name="biblioteca">
     <xs:complexType>
       <xs:sequence>
+        <!-- Cada biblioteca puede tener uno o más libros -->
         <xs:element name="libro" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <!-- Título del libro -->
               <xs:element name="titulo" type="xs:string"/>
+              
+              <!-- Autor del libro -->
               <xs:element name="autor" type="xs:string"/>
+              
+              <!-- Editorial responsable de la publicación -->
               <xs:element name="editorial" type="xs:string"/>
+              
+              <!-- Fecha de publicación (como string, formato libre) -->
               <xs:element name="fecha_publicacion" type="xs:string"/>
+              
+              <!-- Código ISBN del libro -->
               <xs:element name="isbn" type="xs:string"/>
             </xs:sequence>
           </xs:complexType>
@@ -17,4 +30,5 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
 </xs:schema>

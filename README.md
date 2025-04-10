@@ -53,3 +53,24 @@ Se utilizaron las siguientes herramientas para el desarrollo y validación de do
 - **Validadores en línea** como https://www.xmlvalidation.com para verificar la conformidad con DTD y XSD.
 - **Git y GitHub** como sistema de control de versiones para documentar y versionar el proyecto.
 
+## CA4.8 - Documentación de las descripciones
+
+### Descripción del DTD
+
+El archivo `biblioteca.dtd` define la estructura básica que debe seguir el documento XML:
+
+- `biblioteca` es el elemento raíz, que contiene uno o más elementos `libro`.
+- Cada `libro` debe contener los subelementos `titulo`, `autor`, `anio` y `genero`, todos de tipo texto (`#PCDATA`).
+- Esta estructura garantiza que cada libro tenga una información mínima y organizada.
+
+### Descripción del XSD
+
+El archivo `biblioteca.xsd` describe la misma estructura con más precisión:
+
+- Se define el tipo de cada dato (por ejemplo, `anio` es de tipo `gYear`).
+- Se indica que pueden existir múltiples libros (`maxOccurs="unbounded"`).
+- Se utiliza un tipo complejo (`complexType`) para agrupar subelementos.
+
+Esta descripción ayuda a asegurar que los datos estén no solo estructurados, sino también correctamente tipados.
+
+

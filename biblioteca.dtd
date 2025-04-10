@@ -1,7 +1,23 @@
-<!ELEMENT biblioteca (libro+)>
-<!ELEMENT libro (titulo, autor, editorial, fecha_publicacion, isbn)>
-<!ELEMENT titulo (#PCDATA)>
-<!ELEMENT autor (#PCDATA)>
-<!ELEMENT editorial (#PCDATA)>
-<!ELEMENT fecha_publicacion (#PCDATA)>
-<!ELEMENT isbn (#PCDATA)>
+<!-- Elemento raíz que representa la biblioteca.
+     Contiene una o más entradas de libros -->
+     <!ELEMENT biblioteca (libro+)>
+
+     <!-- Cada libro debe contener los siguientes subelementos, en este orden:
+          título, autor, editorial, fecha de publicación e ISBN -->
+     <!ELEMENT libro (titulo, autor, editorial, fecha_publicacion, isbn)>
+     
+     <!-- El título del libro, como texto libre -->
+     <!ELEMENT titulo (#PCDATA)>
+     
+     <!-- El nombre del autor o autora del libro -->
+     <!ELEMENT autor (#PCDATA)>
+     
+     <!-- La editorial que publicó el libro -->
+     <!ELEMENT editorial (#PCDATA)>
+     
+     <!-- La fecha en la que se publicó el libro (texto plano) -->
+     <!ELEMENT fecha_publicacion (#PCDATA)>
+     
+     <!-- Código ISBN del libro (texto plano) -->
+     <!ELEMENT isbn (#PCDATA)>
+     
